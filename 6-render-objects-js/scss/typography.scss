@@ -1,0 +1,44 @@
+.text {
+    --size: 18px;
+    --weight: 400;
+    font-size: var(--size);
+    font-weight: var(--weight);
+
+    // base heading
+    &--bh{
+        --size: 80px;
+    }
+
+    // heading
+    &--h{
+        --size: 50px;
+    }
+
+    // sub heading
+    &--sh {
+        --size: 50px;
+    }
+
+    // medium
+    &--m {
+        --size: 18px;
+    }
+
+    // small
+    &--s {
+        --size: 14px;
+    }
+
+    // weight (font weight)
+    &--w {
+        &-semi-bold {
+            --weight: 700;
+        }
+
+        &-bold {
+            --weight: 600;
+        }
+    }
+
+    // color ...
+}
