@@ -15,8 +15,15 @@ const medicines = [
     price: 38,
   }
 ]
+
 // получить доступ к тегу с id root
 const root = document.getElementById("root")
+
+/*root.innerText = "Text"
+root.innerHTML = "<ul>...</ul>"
+root.addEventListener('click', () => {})
+root.classList.add("container")
+root.style.backgroundColor = "red"*/
 
 // создать Div с текстом "Hello World" и добавить в root элемент
 const helloWorldHTMLElement = document.createElement("div")
@@ -29,7 +36,7 @@ root.appendChild(helloWorldHTMLElement)
 const pressMeHTMLElement = document.createElement("button")
 pressMeHTMLElement.innerText = "Press me"
 root.appendChild(pressMeHTMLElement)
-
+// ************************************************************
 
 // ****************************************************************************************
 // создать тег label с текстом "Email" и добавить в root элемент
@@ -54,10 +61,68 @@ const innerHTMLElement = document.createElement("div")
 innerHTMLElement.innerText = "div"
 wrapperHTMLElement.appendChild(innerHTMLElement)
 
-
 // *******************************************************************************************
 // создать список (с точкой ul) список должен состоять из 5ти пунктов
 // в каждом пункте должен быть текст: Item 1, Item 2, Item 3, Item 4, Item 5
+const ulHTMLElement = document.createElement("ul")
+root.appendChild(ulHTMLElement)
+const li1HTMLElement = document.createElement("li")
+const li2HTMLElement = document.createElement("li")
+const li3HTMLElement = document.createElement("li")
+const li4HTMLElement = document.createElement("li")
+const li5HTMLElement = document.createElement("li")
 
+
+
+// ************************************************************************************************
 // сделать тоже самое только с нумерованым списком (нумерованым ol)
+
+const olHTMLElement = document.createElement("ol")
+root.appendChild(olHTMLElement)
+
+// *************************************************************************************************
+
+
+// создать кнопку
+// добавить текст на кнопку
+// достать родителский тег по айди
+// добавить кнопку в родительский тег
+
+// const btnHTMLElement = document.getElementById("btn")
+// достает элемент по id со значением btn
+
+const btnHTMLElement = document.createElement("button")
+// создание кнопки
+
+
+btnHTMLElement.innerText="click"
+// добавить текст (на кнопку)
+
+//  const wrapperHTMLElement = document.getElementById("wrapper")
+// достать родительский тег по айди
+
+// wrapperHTMLElement.appendChild(btnHTMLElement)
+
+// добавление кнопки в родительский тег
+
+// *******************************************
+// добавить li element во внутрь ul MediaElementAudioSourceNode
+const liHTMLElement = document.createElement("li")
+const liHTMLElement1 = document.createElement("li")
+
+const listHTMLElement = document.getElementById("list")
+listHTMLElement.appendChild(liHTMLElement)
+listHTMLElement.appendChild(liHTMLElement1)
+// coздание li1
+// с родителя достаем ребенка
+// в первый Li добавить текст, а в li1 - добавить div 
+liHTMLElement.innerText = "Myrka"
+const divHTMLElement = document.createElement("div")
+liHTMLElement1.appendChild(divHTMLElement)
+// в  div добавить еще текст
+divHTMLElement.innerText = "Kisa"
+
+// создать li1, li2, li3, внутри списка murka-list
+// и внутри каждого li добавить div с текстом Koshka, Murka, Kisa
+            
 
