@@ -122,7 +122,23 @@ liHTMLElement1.appendChild(divHTMLElement)
 // в  div добавить еще текст
 divHTMLElement.innerText = "Kisa"
 
-// создать li1, li2, li3, внутри списка murka-list
+// создать li11, li22, li33, внутри списка murka-list
 // и внутри каждого li добавить div с текстом Koshka, Murka, Kisa
-            
+const liHTMLElement11 = document.createElement("li")          
+const liHTMLElement22 = document.createElement("li")          
+const liHTMLElement33 = document.createElement("li")          
+const murkaList= document.getElementById("murka-list")
+murkaList.append(liHTMLElement11,liHTMLElement22,liHTMLElement33)
+// если несколько детей нужны одновременно, то используем
+//  только append , без child
+const koshkaHTMLElement = document.createElement("div")  
+const murkaHTMLElement = document.createElement("div")
+const kisaHTMLElement = document.createElement("div")
+koshkaHTMLElement.innerText = "Koshka"
+murkaHTMLElement.innerText = "Murka"
+kisaHTMLElement.innerText = "Kisa"
+liHTMLElement11.appendChild(koshkaHTMLElement)
+liHTMLElement22.appendChild(murkaHTMLElement)
+liHTMLElement33.appendChild(kisaHTMLElement)
+
 
