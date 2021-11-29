@@ -142,3 +142,9 @@ liHTMLElement22.appendChild(murkaHTMLElement)
 liHTMLElement33.appendChild(kisaHTMLElement)
 
 
+// нужно создать форму, а внутри input Javascriptom
+
+
+const input = document.createElement("input");
+const form = document.getElementById("javascriptom")
+form.appendChild(input)
