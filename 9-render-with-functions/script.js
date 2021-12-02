@@ -39,3 +39,18 @@ const someFunction = (/* arguments or empty */) => {
 
 // вызов функции
 someFunction(/* arguments or empty */)
+
+const salary = (salaryPerDay) => {   // создание функции
+    const result = 20 * salaryPerDay
+    return result
+}
+const bob = salary(200)
+const natalia = salary(350) // вызов функции
+
+const createInput = (placeholderText, className) => {  // создание функции
+    const el = document.createElement("input")   // внутри функции создать input элемент           
+    el.placeholder = placeholderText
+    el.className = className                                              
+    return el   // возвращение input
+}
+const gen = createInput("Enter your password", "")  // вызов функции
